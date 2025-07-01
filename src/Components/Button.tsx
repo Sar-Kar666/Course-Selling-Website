@@ -1,4 +1,4 @@
-import { IconTruckReturn } from "@tabler/icons-react";
+
 
 interface ButtonProps{
     variant: "primary" | "secondary";
