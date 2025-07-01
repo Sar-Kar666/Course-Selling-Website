@@ -23,7 +23,7 @@ function App() {
       <Text />
       <div className='flex justify-evenly'>
         <Courses image={<CourseIcon />} title={"Solana Bootcamp"} price={1299} details={"by SOLANA"} />
-        <Courses image={<CourseIconSecond />} title={"Solana Bootcamp"} price={1299} details={"by SOLANA"} />
+        <Courses image={<CourseIconSecond />} title={"Solana Felowship"} price={1299} details={"by SOLANA"} />
 
       </div>
       <div className='flex justify-evenly'>
@@ -32,7 +32,7 @@ function App() {
 
       </div>
       <div className='flex justify-evenly'>
-        <Courses image={<CourseIconThird />} title={"Solana Bootcamp"} price={1299} details={"by SOLANA"} />
+        <Courses image={<CourseIconThird />} title={"Solana Felowship"} price={1299} details={"by SOLANA"} />
       </div>
       <div className='pt-10 pb-10 flex justify-center '>
         <Button variant={"primary"} title={"Load More..."}/>

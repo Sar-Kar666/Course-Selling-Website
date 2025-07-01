@@ -9,7 +9,9 @@ interface CoursesProps{
 }
 
 export function Courses({image,title,price,details}:CoursesProps){
-    return<div className="h-85 w-110 rounded-2xl border-gray-400 shadow-2xl pt-2 mt-10 cursor-pointer hover:scale-110 duration-300 ease-in-out">
+    return<div className="h-85 w-110 rounded-2xl bg-white border-gray-400 shadow-lg
+
+pt-2 mt-10 cursor-pointer hover:scale-110 duration-300 ease-in-out">
         <div className="p-2 rounded-2xl"> 
             {image}
         </div>
