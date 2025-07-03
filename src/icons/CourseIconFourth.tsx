@@ -2,6 +2,6 @@
 
 export function CourseIconFourth(){
     return <div>
-       <img className="scale-90" src="https://s.yimg.com/ny/api/res/1.2/awHqdtlqZMkARmzDvkvTRA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD02OTk-/https://s.yimg.com/os/creatr-uploaded-images/2025-05/2ce87c80-3715-11f0-aef9-813b0c6adc01"/ >
+       <img className="scale-100 rounded-2xl" src="https://img.decrypt.co/insecure/rs:fit:3840:0:0:0/plain/https://cdn.decrypt.co/wp-content/uploads/2024/08/solana-sol-logo-blackbg-gID_7.jpg@webp"/ >
     </div>
 }

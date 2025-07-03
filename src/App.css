@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 
-@theme inline {
+@theme 
+inline {
   --animate-aurora: aurora 60s linear infinite;
   @keyframes aurora {
     from {
@@ -15,4 +16,9 @@
         350% 50%;
     }
   }
+}
+
+@theme{
+  --breakpoint-sm: 43rem;
+  
 }
