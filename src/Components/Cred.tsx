@@ -1,4 +1,3 @@
-import { Link, useLocation } from "react-router-dom";
 import { Button } from "./Button";
 interface ButtonTextProps{
     text: String;
@@ -25,7 +24,7 @@ export function Cred({text,description,redirect}:ButtonTextProps){
                                     </div>
                                     <div className="text-white flex justify-center pt-3">
                                      <div className="pr-2">{ description}</div>   
-                                       <div className=" underline"> 
+                                       <div className=" underline"> {redirect}
                                       </div>
                                       
                                     </div>
