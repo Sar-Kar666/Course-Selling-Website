@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Logo } from "../icons/Logo";
 import { Menu } from "../icons/Menu";
-import { User } from "../icons/User";
+import { Link } from "react-router-dom";
 
 const defaultStyles = " hover:text-violet-500 ";
 const defaultTransition = "hover:scale-110  transition delay-150duration-300 ease-in-out  cursor-pointer ";
@@ -38,10 +38,12 @@ export function Navbar() {
                 </div>
 
 
-                <div className="flex items-center text-black font-extrabold cursor-pointer">
+                <div className="flex items-center  font-sm cursor-pointer">
 
-                    <div className={` ${defaultTransition}`} >
-                        <User />
+                    <div className={`  ${defaultTransition}`} >
+                     
+                            <Link to={"/signup"}>Signup</Link>
+                       
                     </div>
                 </div>
 
@@ -52,10 +54,11 @@ export function Navbar() {
                 <Menu />
                 <div className="  ">
                             {showGrid && (
-                                <div className= { `grid grid-cols-1 right-0 gap-4 p-4   h-40  absolute top-full w-40 bg-white shadow-md rounded-md py-2 px-4 text-left text-sm font-medium space-y-2 sm:right-40  `}>
+                                <div className= { `grid grid-cols-1 right-0 gap-4 p-4   h-50  absolute top-full w-40 bg-white shadow-md rounded-md py-2 px-4 text-left text-sm font-medium space-y-2 sm:right-40  `}>
                                     <div className={`${defaultTransition}`}>Courses</div>
                                     <div className={`${defaultTransition}`}>About</div>
                                     <div className={`${defaultTransition}`}>Contact</div>
+                                    <div className={`${defaultTransition}`}>Signup</div>
                                 </div>)}
                         </div>
             </div >
