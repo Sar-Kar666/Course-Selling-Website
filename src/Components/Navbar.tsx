@@ -57,10 +57,10 @@ export function Navbar() {
                 <div className="  ">
                             {showGrid && (
                                 <div className= { `grid grid-cols-1 right-0 gap-4 p-4   h-50  absolute top-full w-40 bg-white shadow-md rounded-md py-2 px-4 text-left text-sm font-medium space-y-2 sm:right-40  `}>
-                                    <div className={`${defaultTransition}`}> <Link to={"/courses"} >Courses</Link></div>
-                                    <div className={`${defaultTransition}`}><Link to={"/about"}>About</Link> </div>
-                                    <div className={`${defaultTransition}`}>  <Link to={"/contact"}>Contact</Link></div>
-                                    <div className={`${defaultTransition}`}>  <Link to={"/signup"}>Signup</Link></div>
+                                 <Link to={"/courses"} >   <div className={`${defaultTransition}`}> Courses</div></Link>
+                                   <Link to={"/about"}> <div className={`${defaultTransition}`}>About</div></Link> 
+                                  <Link to={"/contact"}>  <div className={`${defaultTransition}`}>  Contact</div></Link>
+                                   <Link to={"/signup"}>  <div className={`${defaultTransition}`}> Signup</div></Link>
                                 </div>)}
                         </div>
             </div >
