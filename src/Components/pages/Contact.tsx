@@ -1,6 +1,6 @@
 export function Contact() {
   return (
-    <div className="w-full h-235 px-4 py-16 bg-gray-100" id="contact">
+    <div className="w-full h-235 px-4 py-16 bg-gray-100" >
       <div className="max-w-2xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-violet-700 mb-6">Get in Touch</h2>
         <p className="text-center text-gray-600 mb-8">
