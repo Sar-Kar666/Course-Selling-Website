@@ -16,7 +16,7 @@ export function Signin() {
         const username = usernameRef.current?.value;
         const password = passwordRef.current?.value;
 
-        axios.post("/signup", {
+        axios.post("https://course-selling-website-gxal.vercel.app/signup", {
             username,
             email,
             password
@@ -33,7 +33,7 @@ export function Signin() {
         const email = emailRef.current?.value;
         const password = passwordRef.current?.value;
 
-        axios.post("/signin", {
+        axios.post("https://course-selling-website-gxal.vercel.app/signin", {
             email,
             password
         }).then((Response) => {
