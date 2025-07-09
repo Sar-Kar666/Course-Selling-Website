@@ -30,8 +30,8 @@ export function Signin() {
     const signinemailRef = useRef<HTMLInputElement>(null);;
 
     function signin() {
-        const email = emailRef.current?.value;
-        const password = passwordRef.current?.value;
+        const email = signinemailRef.current?.value;
+        const password = signinpasswordRef.current?.value;
 
         axios.post("https://course-selling-website-gxal.vercel.app/signin", {
             email,
