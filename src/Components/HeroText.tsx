@@ -8,7 +8,7 @@ export function HeroText(){
 return <div><FlipWords
           words={wordList}
           duration={1000}
-          className="font-extrabold text-sm text-white sm:text-xl  "
+          className="font-extrabold text-sm text-white sm:text-3xl "
         /> 
 
         

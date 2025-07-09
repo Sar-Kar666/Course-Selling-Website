@@ -25,17 +25,17 @@ export function Navbar() {
             <div className="hidden  lg:flex w-120 justify-between ">
 
 
-                <div className={` hover:underline ${defaultStyles} ${defaultTransition}`}>
+                <div className={` hover:underline ${defaultStyles} `}>
                      <div>
                     <Link to={"/courses"} >Courses</Link>
                     </div>  
                 </div>
 
-                <div className={` hover:underline ${defaultStyles} ${defaultTransition}`}>
+                <div className={` hover:underline ${defaultStyles} `}>
                     <Link to={"/about"}>About</Link> 
                 </div>
 
-                <div className={`hover:underline ${defaultStyles} ${defaultTransition}`}>
+                <div className={`hover:underline ${defaultStyles} `}>
                  <Link to={"/contact"}>Contact</Link>
                 </div>
 
