@@ -16,7 +16,7 @@ export function Signin() {
         const username = usernameRef.current?.value;
         const password = passwordRef.current?.value;
 
-        axios.post("api/v1/signup", {
+        axios.post("/signup", {
             username,
             email,
             password
@@ -33,7 +33,7 @@ export function Signin() {
         const email = emailRef.current?.value;
         const password = passwordRef.current?.value;
 
-        axios.post("api/v1/signin", {
+        axios.post("/signin", {
             email,
             password
         }).then((Response) => {
