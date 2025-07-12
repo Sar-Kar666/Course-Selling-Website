@@ -16,7 +16,7 @@ export function Signin() {
         const username = usernameRef.current?.value;
         const password = passwordRef.current?.value;
 
-        axios.post("https://csa-backend-2.onrender.com/signup", {
+        axios.post("https://csa-backend-2.onrender.com/user/signup", {
             username,
             email,
             password
@@ -33,7 +33,7 @@ export function Signin() {
         const email = signinemailRef.current?.value;
         const password = signinpasswordRef.current?.value;
 
-        axios.post("https://csa-backend-2.onrender.com/signin", {
+        axios.post("https://csa-backend-2.onrender.com/user/signin", {
             email,
             password
         }).then((Response) => {
