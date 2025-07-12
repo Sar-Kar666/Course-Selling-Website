@@ -16,7 +16,7 @@ export function Signin() {
         const username = usernameRef.current?.value;
         const password = passwordRef.current?.value;
 
-        axios.post("https://csa-backend-blond.vercel.app/signup/", {
+        axios.post("https://csa-backend-blond.vercel.app/signup", {
             username,
             email,
             password
@@ -33,7 +33,7 @@ export function Signin() {
         const email = signinemailRef.current?.value;
         const password = signinpasswordRef.current?.value;
 
-        axios.post("https://csa-backend-blond.vercel.app/signin/", {
+        axios.post("https://csa-backend-blond.vercel.app/signin", {
             email,
             password
         }).then((Response) => {
