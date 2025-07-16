@@ -29,7 +29,7 @@ export function Signin() {
     const signinpasswordRef = useRef<HTMLInputElement>(null);;
     const signinemailRef = useRef<HTMLInputElement>(null);;
 
-    function signin() {
+     function signin() {
         const email = signinemailRef.current?.value;
         const password = signinpasswordRef.current?.value;
 
@@ -45,6 +45,8 @@ export function Signin() {
         })
 
         alert("you have signed up")
+
+
 
     }
 

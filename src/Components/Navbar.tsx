@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Logo } from "../icons/Logo";
 import { Menu } from "../icons/Menu";
 import { Link } from "react-router-dom";
+import { User } from "../icons/User";
 
 const defaultStyles = " hover:text-violet-500 ";
 const defaultTransition = "hover:scale-110  transition delay-150duration-300 ease-in-out  cursor-pointer ";
@@ -43,8 +44,8 @@ export function Navbar() {
                 <div className="flex items-center  font-sm cursor-pointer">
 
                     <div className={`  ${defaultTransition}`} >
-                     
-                            <Link to={"/signin"}>Signin</Link>
+                            {localStorage.getItem("token")? <div><User/></div>:<Link to={"/signin"}>Signin</Link>}
+                            
                        
                     </div>
                 </div>
