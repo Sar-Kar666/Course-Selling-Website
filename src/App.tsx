@@ -5,6 +5,7 @@ import { AllCourses } from "./Components/pages/AllCourses"
 import { Navbar } from "./Components/Navbar"
 import { About } from "./Components/pages/About"
 import { Contact } from "./Components/pages/Contact"
+import { CourseDetails } from "./Components/pages/CourseDetails"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <Route path="/courses" element={<AllCourses/>}/>
     <Route path="/about" element={<About/>}/>
      <Route path="/contact" element={<Contact/>}/>
+      <Route path="/course/details" element={<CourseDetails/>}/>
   </Routes>
 
   </BrowserRouter>

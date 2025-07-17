@@ -1,6 +1,9 @@
 import { ReactElement } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { CourseDetails } from "./pages/CourseDetails";
 
-interface CoursesProps {
+export interface CoursesProps {
     image: ReactElement;
     title: String;
     price: number;
@@ -9,7 +12,15 @@ interface CoursesProps {
 }
 
 export function Courses({ image, title, price, details }: CoursesProps) {
-    return <div className="flex justify-center items-center">
+
+    const [openCourse,setOpenCourse]=useState(true);
+
+    const OnLoad=()=>{
+        setOpenCourse(!openCourse);
+    }
+
+    return <div > 
+        {openCourse && <div className="flex justify-center items-center" onClick={OnLoad} >
         <div className="max-h-85 max-w-110 rounded-2xl bg-white border-gray-400 shadow-lg cursor-pointer hover:scale-110 duration-300 ease-in-out">
         <div className="p-4">
             <div className=" rounded-2xl ">
@@ -29,5 +40,9 @@ export function Courses({ image, title, price, details }: CoursesProps) {
             </div>
         </div>
         </div>
-    </div>
+    </div>}
+
+    {!openCourse && <Link to={"/course/details"} state={{ image, title, price, details }} ><CourseDetails/></Link>}
+   
+    </div> 
 }

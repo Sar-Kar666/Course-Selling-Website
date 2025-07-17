@@ -61,7 +61,7 @@ export function Navbar() {
                                  <Link to={"/courses"} >   <div className={`${defaultTransition}`}> Courses</div></Link>
                                    <Link to={"/about"}> <div className={`${defaultTransition}`}>About</div></Link> 
                                   <Link to={"/contact"}>  <div className={`${defaultTransition}`}>  Contact</div></Link>
-                                   <Link to={"/signin"}>  <div className={`${defaultTransition}`}> Signin</div></Link>
+                                   <Link to={"/signin"}>  <div className={`${defaultTransition}`}> {localStorage.getItem("token")? <div><User/></div>:Signin}</div></Link>
                                 </div>)}
                         </div>
             </div >
