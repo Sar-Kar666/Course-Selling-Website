@@ -54,7 +54,7 @@ export function AdminSignin(){
                             </div>
                             <div>
 
-                                <input ref={signinemailRef} type="password" placeholder="Password" className="min-w-50  px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 sm:w-70 md:w-100" />
+                                <input ref={signinpasswordRef} type="password" placeholder="Password" className="min-w-50  px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 sm:w-70 md:w-100" />
 
                             </div>
                         </div>
