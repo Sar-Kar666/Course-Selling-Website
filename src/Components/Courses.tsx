@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { useState } from "react";
+
 
 export interface CoursesProps {
     image: ReactElement;
@@ -11,14 +11,9 @@ export interface CoursesProps {
 
 export function Courses({ image, title, price, details }: CoursesProps) {
 
-    const [openCourse,setOpenCourse]=useState(true);
-
-    const OnLoad=()=>{
-        setOpenCourse(!openCourse);
-    }
-
+  
     return <div > 
-        {openCourse && <div className="flex justify-center items-center" onClick={OnLoad}>
+         <div className="flex justify-center items-center">
         <div className="max-h-85 min-w-70 max-w-110 rounded-2xl bg-white border-gray-400 shadow-lg cursor-pointer hover:scale-110 duration-300 ease-in-out md:gird md:grid-cols-1 md:gap-7">
         <div className="p-4">
             <div className=" rounded-2xl ">
@@ -38,24 +33,8 @@ export function Courses({ image, title, price, details }: CoursesProps) {
             </div>
         </div>
         </div>
-    </div>}
+    </div>
 
-    {!openCourse && <div className="top-0  left-0 flex justify-center items-center">
-    <div className=" bg-red-400 h-300">
-  <div className="">
-    {image}
-  </div>
-  <div>
-    {title}
-  </div>
-  <div>
-    {price}
-  </div>
-  <div>
-    {details}
-  </div>
-</div>
-</div>}
    
     </div> 
 }

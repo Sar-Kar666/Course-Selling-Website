@@ -1,35 +1,36 @@
 import axios from "axios";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 export function AdminSignin(){
 
-    const signinpasswordRef = useRef<HTMLInputElement>(null);;
-    const signinemailRef = useRef<HTMLInputElement>(null);;
-
+    const signinpasswordRef = useRef<HTMLInputElement>(null);
+    const signinemailRef = useRef<HTMLInputElement>(null);
+const navigate = useNavigate();
      function signin() {
         const email = signinemailRef.current?.value;
         const password = signinpasswordRef.current?.value;
 
         axios.post("https://csa-backend-2.onrender.com/admin/signin", {
+            // axios.post("http://localhost:3000/admin/signin", {
             email,
             password
         }).then((Response) => {
             // @ts-ignore
             const token = Response.data.token;
-            const message=Response.data.message;
+          
+            if(token)alert("Signed in");
             
 
             // ✅ Store token in localStorage
             localStorage.setItem("token", token);
-            alert(message);
+               if(localStorage.getItem("token")) 
+            {navigate("/admin/edit");}
         })
+
+     
        
-
-        
-
-
-
     }
 
 
