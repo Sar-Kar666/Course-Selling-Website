@@ -1,7 +1,5 @@
 import { ReactElement } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { CourseDetails } from "./pages/CourseDetails";
 
 export interface CoursesProps {
     image: ReactElement;

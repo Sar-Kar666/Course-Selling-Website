@@ -61,7 +61,7 @@ export function AdminSignin(){
                     </div>
 
                     <div className="pt-6 flex justify-center">
-                     <button className="min-w-50 max-w-100 h-11 border border-black cursor-pointer rounded-lg bg-violet-600 text-white sm:w-70 md:w-100" >
+                     <button onClick={signin} className="min-w-50 max-w-100 h-11 border border-black cursor-pointer rounded-lg bg-violet-600 text-white sm:w-70 md:w-100" >
                            Signin
 
                         </button>
