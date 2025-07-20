@@ -17,11 +17,12 @@ export function AdminSignin(){
         }).then((Response) => {
             // @ts-ignore
             const token = Response.data.token;
+            const message=Response.data.message;
             
 
             // ✅ Store token in localStorage
             localStorage.setItem("token", token);
-            alert(Response.data.message)
+            alert(message);
         })
        
 
