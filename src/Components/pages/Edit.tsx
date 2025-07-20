@@ -5,7 +5,7 @@ const defaultText = "font-bold text-2xl py-2 text-violet-500";
 export function Edit() {
 
     const titleRef=useRef<HTMLInputElement>(null);
-    const descriptionRef=useRef<HTMLInputElement>(null);
+    const descriptionRef=useRef<HTMLTextAreaElement>(null);
     const priceRef=useRef<HTMLInputElement>(null);
     const linkRef=useRef<HTMLInputElement>(null);
 
