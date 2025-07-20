@@ -21,7 +21,7 @@ export function AdminSignin(){
 
             // ✅ Store token in localStorage
             localStorage.setItem("token", token);
-            alert(Response.data)
+            alert(Response.data.message)
         })
        
 
