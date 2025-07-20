@@ -19,7 +19,7 @@ export function Edit() {
 
 
         
-        axios.post("https://csa-backend-2.onrender.com/admin/signin",{
+        axios.post("https://csa-backend-2.onrender.com/admin/course",{
         //    axios.post("http://localhost:3000/admin/course", {
 
                 title,
