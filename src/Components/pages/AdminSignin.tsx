@@ -17,10 +17,12 @@ export function AdminSignin(){
         }).then((Response) => {
             // @ts-ignore
             const token = Response.data.token;
-
+            if(!token) alert("Invalid cred");
+            
             // ✅ Store token in localStorage
             localStorage.setItem("token", token);
         })
+       
 
         alert("you have signed up")
 
