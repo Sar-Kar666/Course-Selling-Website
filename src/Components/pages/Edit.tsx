@@ -33,7 +33,7 @@ export function Edit() {
             }
         }).then((Response)=>{
             const message= Response.data.message;
-            const courseId=Response.data.CourseId;
+            const courseId=Response.data.courseId;
 
             alert(`${message} and ${courseId}`)
         })
