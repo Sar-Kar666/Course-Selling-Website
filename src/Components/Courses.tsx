@@ -21,7 +21,7 @@ export function Courses({ image, title, price, details }: CoursesProps) {
 
     return <div > 
         {openCourse && <div className="flex justify-center items-center" onClick={OnLoad}>
-        <div className="max-h-85 max-w-110 rounded-2xl bg-white border-gray-400 shadow-lg cursor-pointer hover:scale-110 duration-300 ease-in-out">
+        <div className="max-h-85 min-w-70 max-w-110 rounded-2xl bg-white border-gray-400 shadow-lg cursor-pointer hover:scale-110 duration-300 ease-in-out md:gird md:grid-cols-1 md:gap-7">
         <div className="p-4">
             <div className=" rounded-2xl ">
                 {image}

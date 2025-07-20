@@ -11,7 +11,7 @@ const defaultTransition = "hover:scale-110  transition delay-150duration-300 eas
 export function Navbar() {
     const [showGrid, setShowGrid] = useState(false);
     return <div className="sticky  z-50 top-0 ">
-        <div className=" bg-white  flex justify-between items-center border-b-2 border-gray-200 shadow-1 pb-3    pr-5 pl-5 shadow-lg   font-medium text-lg  text-black  md:pl-40 md:pr-40 sm:text pt-2 " >
+        <div className=" bg-white min-w-84 flex justify-between items-center border-b-2 border-gray-200 shadow-1 pb-3    pr-5 pl-5 shadow-lg   font-medium text-lg  text-black  md:pl-40 md:pr-40 sm:text pt-2 " >
 
             <div className={`  flex flex-1 items-center text-lg font-bold  ${defaultStyles} `}>
                  <Link to={"/"}><div className={` flex  text-black cursor-pointer ${defaultTransition}  `}>
@@ -34,6 +34,10 @@ export function Navbar() {
 
                 <div className={` hover:underline ${defaultStyles} `}>
                     <Link to={"/about"}>About</Link> 
+                </div>
+
+                 <div className={` hover:underline ${defaultStyles} `}>
+                    <Link to={"/admin"}>Admin</Link> 
                 </div>
 
                 <div className={`hover:underline ${defaultStyles} `}>
@@ -62,6 +66,7 @@ export function Navbar() {
                                    <Link to={"/about"}> <div className={`${defaultTransition}`}>About</div></Link> 
                                   <Link to={"/contact"}>  <div className={`${defaultTransition}`}>  Contact</div></Link>
                                    <Link to={"/signin"}>  <div className={`${defaultTransition}`}> {localStorage.getItem("token")? <div><User/></div>:"Signin"}</div></Link>
+                                   <Link to={"/about"}>About</Link> 
                                 </div>)}
                         </div>
             </div >
