@@ -56,7 +56,7 @@ type Course = {
 
 export function Courses() {
   const [courses, setCourses] = useState<Course[]>([]);
-  const [visible, setVisible] = useState(4); 
+  
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
     const [showModal, setShowModal] = useState(false);
 
