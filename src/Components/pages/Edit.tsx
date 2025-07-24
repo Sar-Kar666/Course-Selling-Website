@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const defaultText = "font-bold text-2xl py-2 text-violet-500";
 export function Edit() {
@@ -37,6 +38,9 @@ export function Edit() {
 
             alert(`${message} and ${courseId}`)
         })
+
+        const navigate = useNavigate()
+         navigate("/courses");
 
     }
 
