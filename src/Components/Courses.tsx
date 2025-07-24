@@ -61,7 +61,7 @@ export function Courses() {
     const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    axios.get("https://your-backend.onrender.com/courses")
+    axios.get("https://csa-backend-2.onrender.com/courses/preview")
     // axios.get("http://localhost:3000/courses/preview")
     
       .then(res => setCourses(res.data.courses))
