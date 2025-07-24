@@ -1,14 +1,15 @@
 import axios from "axios";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
 export function AdminSignin(){
-
+const [disabled, setDisabled] = useState(false)
     const signinpasswordRef = useRef<HTMLInputElement>(null);
     const signinemailRef = useRef<HTMLInputElement>(null);
 const navigate = useNavigate();
      function signin() {
+        setDisabled(true); 
         const email = signinemailRef.current?.value;
         const password = signinpasswordRef.current?.value;
 
@@ -32,6 +33,8 @@ const navigate = useNavigate();
      
        
     }
+     ;
+ 
 
 
     return <div className="h-screen w-full flex justify-center items-center bg-gray-200">
@@ -66,7 +69,7 @@ const navigate = useNavigate();
                     </div>
 
                     <div className="pt-6 flex justify-center">
-                     <button onClick={signin} className="min-w-50 max-w-100 h-11 border border-black cursor-pointer rounded-lg bg-violet-600 text-white sm:w-70 md:w-100" >
+                     <button onClick={signin} disabled={disabled} className="min-w-50 max-w-100 h-11 border border-black cursor-pointer rounded-lg bg-violet-600 text-white sm:w-70 md:w-100" >
                            Signin
 
                         </button>
