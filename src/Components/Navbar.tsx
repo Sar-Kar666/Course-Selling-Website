@@ -10,7 +10,7 @@ const defaultTransition = "hover:scale-110  transition delay-150duration-300 eas
 
 export function Navbar() {
     const [showGrid, setShowGrid] = useState(false);
-    return <div className="sticky  z-50 top-0 ">
+    return <div className="sticky  z-50 top-0">
         <div className=" bg-white min-w-84 flex justify-between items-center border-b-2 border-gray-200 shadow-1 pb-3    pr-5 pl-5 shadow-lg   font-medium text-lg  text-black  md:pl-40 md:pr-40 sm:text pt-2 " >
 
             <div className={`  flex flex-1 items-center text-lg font-bold  ${defaultStyles} `}>

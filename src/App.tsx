@@ -13,7 +13,7 @@ import { Edit } from "./Components/pages/Edit"
 function App() {
 
  
-  return<BrowserRouter>
+  return<BrowserRouter >
   <div className="bg-gray-100 h-full top-0 left-0  sticky z-50 ">
     <Navbar />
   </div>

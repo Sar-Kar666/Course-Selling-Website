@@ -7,3 +7,9 @@ export default defineConfig({
   plugins: [react(),  tailwindcss()],
   
 })
+
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
