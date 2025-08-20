@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useId, useRef, useState } from "react";
+import  { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "../hooks/use-outside-click";
 
@@ -129,6 +129,7 @@ export function ExpandableCardDemo() {
         ) : null}
       </AnimatePresence>
       <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4hat">
+        {/* @ts-ignore */}
         {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
