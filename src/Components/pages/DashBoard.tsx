@@ -23,22 +23,9 @@ export function DashBoard() {
       
         <AuroraBackground children={<HeroText/>}  className='rounded-md h-80 w-full  sm:min-w-100 sm:h-150'/>
       </div>
-      <div className='flex justify-center pt-30 pb-10'>
-        <div className=''>
-       <TypewriterEffect  className="text-2xl text-blue-600"
-        cursorClassName="bg-black w-[2px] h-6 animate-blink"  words={[
-    { text: "Next.js", className:" text-red-500" },
-    { text: "Tailwind", className: "text-white font-bold" },
-    { text: "TypeScript", className: "text-white font-bold" },
-  ]}/>
-        </div>
-      </div>
-      <div className='pt-10'>
-        <DirectionCards/>
-      </div>
-      <div className='pt-10'>
-         <ExpandableCardDemo/>
-      </div>
+      
+      
+     
      
       <div>
      <Courses/>
