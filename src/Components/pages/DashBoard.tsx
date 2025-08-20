@@ -5,9 +5,6 @@ import { Courses } from '../Courses'
 
 import { AuroraBackground } from '../ui/AuroraBackground'
 import { HeroText } from '../HeroText'
-import { ExpandableCardDemo } from '../ui/ExpandableCardDemo'
-import { DirectionCards } from '../DirectionCards'
-import { TypewriterEffect } from '../ui/TypewriterEffect'
 
 
 
@@ -23,7 +20,7 @@ export function DashBoard() {
       
         <AuroraBackground children={<HeroText/>}  className='rounded-md h-80 w-full  sm:min-w-100 sm:h-150'/>
       </div>
-      
+
       
      
      
