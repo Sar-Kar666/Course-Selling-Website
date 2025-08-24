@@ -61,7 +61,7 @@ export function Navbar() {
                 <Menu />
                 <div className="  ">
                             {showGrid && (
-                                <div className= { `grid grid-cols-1 right-0 gap-4 p-4   max-h-100  absolute top-full w-40 bg-white shadow-md rounded-md py-2 px-4 text-left text-sm font-medium space-y-2 sm:right-40  `}>
+                                <div className= { `grid grid-cols-1 right-0 gap-4 p-4   max-h-100  absolute top-full w-40 bg-white shadow-md rounded-md py-2 px-4 text-left text-sm font-medium space-y-2 sm:right-5  md:right-40`}>
                                  <Link to={"/courses"} >   <div className={`${defaultTransition}`}> Courses</div></Link>
                                    <Link to={"/about"}> <div className={`${defaultTransition}`}>About</div></Link> 
                                   <Link to={"/contact"}>  <div className={`${defaultTransition}`}>  Contact</div></Link>
