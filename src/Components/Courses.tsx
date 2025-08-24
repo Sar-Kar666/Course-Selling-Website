@@ -69,12 +69,12 @@ export function Courses() {
   }, []);
 
    return (
-    <div className="px-8 py-10">
+    <div className="">
       <h2 className="text-2xl font-bold mb-6">Featured Courses</h2>
 
-      {/* COURSE GRID */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {/* ✅ STEP 2: Render course cards with click handler */}
+     
+      <div className="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        
         {courses.map(course => (
           <div
             key={course._id}
