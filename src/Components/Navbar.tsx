@@ -48,7 +48,7 @@ export function Navbar() {
                 <div className="flex items-center  font-sm cursor-pointer">
 
                     <div className={`  ${defaultTransition}`} >
-                            {localStorage.getItem("token")? <div><User/></div>:<Link to={"/signin"}>Signin</Link>}
+                            <Link to={"/signin"}>Signin</Link>
                             
                        
                     </div>
